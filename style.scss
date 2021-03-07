@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    padding: 30px;
+    background-color: #d69b73;
+    // color: #fff;
+}
+
+.head {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+    color: #e26511;
+    span {
+        color: #000;
+    }
+}
+
+.container {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.settings {
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #fff;
+    box-shadow: 0px 10px 20px rgba( #000000, 0.5);
+    text-align: center;
+    label {
+        text-transform: capitalize;
+        font-size: 26px;
+        // display: block;
+    }
+    input {
+        font-size: 20px;
+        height: 30px;
+        width: 50px;
+        outline: none;
+        border: 0;
+        border-bottom: 3px solid #e26511;
+        background-color: transparent;
+        text-align: center;
+        // display: block;
+        width: 90%;
+        border-radius: 10px;
+    }
+    &>div {
+        // max-width: 400px;
+        margin-bottom: 10px;
+    }
+    .btn {
+        width: 90%;
+        padding: 10px 20px;
+        margin: 20px 0;
+        border: 3px solid #e26511;
+        background-color: #e26511;
+        color: #fff;
+        text-transform: uppercase;
+        cursor: pointer;
+        font-size: 30px;
+        border-radius: 10px;
+        &:hover {
+            background-color: #000;
+            color: #fff;
+        }
+        &:active {
+            background-color: transparent;
+            color: #000;
+        }
+        &:focus {
+            outline: none;
+            // border: 0;
+        }
+    }
+}
+
+.output {
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba( #000000, 0.5);
+    // border: 2px solid #e26511;
+    padding: 5px;
+    background-color: #fff;
+    // margin-top: 40px;
+    p {
+        background-color: #e26511ad;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+}
